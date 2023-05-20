@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+* {
+    font-family: "Exo", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("./71578.jpg");
+}
+
+body {
+    text-align: center;
+    color: #fff;
+}
+
+#titulo {
+    padding: 1rem;
+}
+
+#titulo h1 {
+    padding: 1rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+#titulo h2 {
+    text-transform: uppercase; /*deixar as letras maiúsculas*/
+    margin-bottom: 2rem;
+}
+
+.palavra {
+    color: yellow;
+}
+
+.legenda {
+    margin-bottom: 2rem;
+}
+
+input::placeholder { /*colorindo as letras dentro do input*/
+    color: #fff;
+    text-align: center;
+}
+
+#registers-form {
+    border: 2px solid #fff;
+}
+
+#names-form {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.0rem;    
+}
+
+#names-form input[type="text"] {
+    display: flex;
+    border: 2px solid #fff;
+    font-weight: bold;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+#names-form label {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#emails-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.0rem;
+    margin-bottom: 2rem;
+}
+
+#emails-form input[type="email"] {
+    border: 2px solid #fff;
+    font-weight: bold;
+}
+
+#emails-form input[type="password"] {
+    border: 2px solid #fff;
+    font-weight: bold;
+}
+
+#emails-form label {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#emails-form input[type="submit"] {
+    background-color: transparent;
+    color: #fff;
+    width: 100px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+#emails-form input[type="submit"]:hover {
+    transition: 0.5s;
+    background-color: yellow;
+}

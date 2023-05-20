@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Prático</title>
+
+    <!-- ///criamos um script para inserir as figuras dos aplicativos*/ -->
+
+    <script src="https://kit.fontawesome.com/94df760b5c.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+    <!-- // demos inicio ao cabeçalho(header) e demos o titulo com o h1// -->
+
+    <header>
+        <h1>Dev.Breno Goddard</h1>
+
+        <!-- // criado a estrutura de navegação para ter acesso as páginas dos aplicativos// -->
+
+        <nav>
+            <a href="https://www.facebook.com/BrenoGoddard" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/brenogoddard/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://br.linkedin.com/in/breno-goddard-a6b131225" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- // criado o main (conteúdo principal relacionado com o tópico principal) 
+        o section inserimos para melhor estilizar depois no css.
+        utilizamos o article para inserir um post que seria o h2 e o (p) para criação de parágrafo.
+    // -->
+
+    <main>
+            <section class="main-content">
+                <article class="text">
+                    <h2>🙋🏽‍♂️ Sobre mim</h2>
+                    <p>
+                        Olá, meu nome é Breno Goddard, tenho 27 anos e sou natural de Minas Gerais - Brasil. <br>
+                        <br>
+                        Atualmente cursando Análise e desenvolvimento de Sistemas na universidade Una atrelado também ao curso Profissão Programador. <br>
+                        <br>
+                        Apaixonado por desenvolver softwares, com ênfase em desenvolvimento web e mobile utilizando as tecnologias mais atualizadas do mercado.
+                    </p>
+                </article>
+
+                <!-- // criamos o aside para uma outra seção da página para inserirmos as tecnologias. -->
+
+            <aside class="techs">
+                <h2>👨🏽‍💻 Tecnologias</h2>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./img/techs/HTML5_logo.png" alt="Logo HTML5">
+                    </div>
+                    <div class="card">
+                        <img src="./img/techs/download_logo_css.png" alt="Logo CSS3">
+                    </div>
+                    <div class="card">
+                        <img src="./img/techs/JS_logo.png" alt="Logo Javascript">
+                    </div>
+                    <div class="card">
+                        <img src="./img/techs/React_logo.png" alt="Logo React">
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+            <!-- // o figure foi criado para inserimos a imagem de perfil e o caption para darmos o nome a ela. -->
+
+            <figure>
+                <img src="./img/techs/p1.jpg" alt="Imagem de Breno Goddard">
+                <figcaption>Breno Henrique de Abreu Goddard</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- // o footer nosso rodapé para inserimos o copy right // -->
+
+    <footer>
+        <span>
+            &copy; Breno Henrique de Abreu Goddard, 2023 - Todos os direitos reservados.
+        </span>
+    </footer>
+
+    <!-- // links abaixo para o css de cada parte do site ter acesso ao nosso código html // -->
+
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+</body>
+</html>

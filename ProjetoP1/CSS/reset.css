@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway",sans-serif;
+}
+
+/* estilizamos toda a página no geral, inserindo largura,altura,cor,cor da letra, alinhando os dados com display flex
+flex direction para ficar em colunas e justify separar os elementos ao máximo */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* estilizando as figuras dos aplicativos (facebook, instagram, linkedin) para não ter sublinhado nos links e a cor branca*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+}

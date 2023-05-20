@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*estilizando o main onde fizemos o preenchimento do texto*/
+
+main {                                         
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* estilizando a classe que contém o texto*/
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* estilizando o título "Sobre mim" */
+
+.main-content h2 {
+    margin-bottom: 2%;
+    font-size: 2.2em;
+}
+
+/* estilizando o texto "Sobre mim" */
+
+.main-content .text {
+    margin-bottom: 10%;
+}
+
+/* estilizando o texto contido no parágrafo "Olá..." */
+
+.main-content .text p {
+    width: 70%;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/*estilizando os cards para serem exibidos um abaixo do outro */
+
+main .techs .cards-container {
+    display: flex;
+    align-items: center;
+}
+
+/* estilizando tamanho, cor, borda, pointer (passando mouse vira mãozinha), transition para ficar um tempo com o efeito de sombra
+ e alinhamos para que a imagem seja exibida ao centro */
+
+main .techs .cards-container .card {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    background-color:#eee ;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.25s ease-in-out ;
+}
+
+/* corrigimos a largura das images*/
+
+main .techs .cards-container .card img {
+    width: 80%;
+}
+
+/* estilizando para quando passarmos o mouse por cima das logos, dê um efeito de sombra(box-shadow) */
+
+main .techs .cards-container .card:hover {
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+/* estilizando a figura principal(foto de perfil) alinhando para que a imagem seja exibida ao centro 
+e criando uma coluna para ficar um embaixo do outro */
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilizando a largura, altura, para que fique o círculo dando o border radius, margin bottom para distanciar para baixo
+mudando o tamanho da borda e transition para o mouse permanecer poralguns segundos que é um efeito de início e fim lentos */
+
+main figure img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 150px;
+    margin-bottom: 6%;
+    border: 1px #00e0ff solid;
+    transition: 0.2s ease-in-out;
+}
+
+/* estilizando para dar um efeito quando passarmos o mouse por cima da foto*/
+
+main figure img:hover {
+    box-shadow: 0px 0px 6px #00e0ff;
+}
+
+@media (max-width: 450px) {
+
+    .text h2 {
+        margin-bottom: 1.2rem;
+        margin-left: 10%;
+    }
+
+    .text p {
+        margin-left: 15%;
+    }
+
+    .techs {
+        font-size: 0.5rem;
+        margin-left: 30%;
+    }
+
+    .techs h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    figure img {
+        display: none;
+    }
+
+    figcaption {
+        display: none;
+    }
+
+    .cards-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-direction: column;
+        width: 50%;
+        height: 10%;
+    }
+
+}

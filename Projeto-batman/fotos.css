@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: #0f0b0b;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 17px;
+    transition: .3s;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 120px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#titulo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.per {
+    color: #D21617;
+    font-size: 20px;
+    width: 80%;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+    margin: 60px 50%;
+}
+
+#capa {
+    background-image: url('https://files.tecnoblog.net/wp-content/uploads/2022/04/batman.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.actor-fotos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fotos-content {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.fotos {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: red;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+.fotos:hover {
+    transform: scale(1.02);
+}
+
+.actor-1 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgOlCcJaO6EV14JAM2WAW1Aonhe-USuQqBX6Z1466B-fVtIoyJuThKiocTVvlz3Sc_yfsts0ZiZnTDyt6n_0og58wjI-p0FzYlOE9tRT74vGi50tp6pvsf0WEdYera7aRk6Q2VU5LJqxdVvpBFhT3zIwHOV2cPHQxeE5Qneu2WEZJS6HN59y4IChtAowA=w640-h360');
+    object-fit: contain;
+}
+
+.actor-2 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgkrs_XhIis4vt_maFepsXgaKfyDXk1hfJhnAZjRD96GOZNYeHK_9mJiUyJ7K6CcZ3VXNznVBgKrcBidvJ2ED-3DSyLdrT5SDA1KxeqnWROpqb2yeSj_4J7_5aRp3ojncCRFwlIWw3myb1cKgfnW_QHlTHxXSyGFua1vdBMrUA7edpqINnriH0QpZrFuA=w640-h360');
+    object-fit: contain;
+}
+
+.actor-3 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgrcbGIE5gn0bdRxGELITsQxqjr5Qm-g8zuG5nAxuOMCRkABUozfRAX5HdzfuhVDeCJv5hM4QmMg3q6sFnKUdesLM6QhFSVdLyiyi1t9KiegBu2OuyCKf3_Qxr48BnVP-Yh-XwlGm0Td95MTnuKtKQZiSorsbV1M-P8RCUIVc_FYohlSV6C6ES3R5JdzQ=w640-h360');
+    object-fit: contain;
+}
+
+.actor-4 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEjigKVMoVX_Sk84fBmRo_XaDSrqui8q6rh5i3JHX9M0yBcNf1s-jyjgCnffj_3AK0qX31Tdq8rAyuePMNs6tin-QCgyZAoXfxCQH_77i9I6wpI_ydzRMpqAGTzMXIertqVTX6_Vey_9R-_VasjVLB0WbzLmaeyOyN6B4O7dkJgtQIukevHzuyQVaFohqA=w640-h360');
+    object-fit: contain;
+}
+
+.actor-5 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEjMCGO1RyE7GIUVqknCYeeosor6MothaFv_K30LdSYhnP31sf-ZQO-JGusD8WNsbfphAkSu3lbXOIK4MGK8fPiZPaPP0rZ3XLWY6_DAsllAsxxFPeGBOUmEP2t9OkjHpo8_Yql8l4K2jOcFTRGohZe3d6Bzgls8koaidr85jFZiowXmixbYLDfynFAI6g=w640-h360');
+    object-fit: contain;
+}
+
+.actor-6 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgzW3UC0X50vKKb6JUW6VIsKkl6_S4x09Bm_2Cear8aoNyIMnTI2CNNxZer-dEIL1H1BxVmNC4Kgmv97LvBh5MdasgtuF9IEK_BYecreUsjsyJkvhRUzjzOZbAzwl9xu4nCyfIe1-gg55f4KXDRU5gLJO_QrjQpe78krsb1uhcW4uZBzFUX7JjLABZpGQ=w640-h360');
+    object-fit: contain;
+}
+
+.actor-7 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEhLpBsb-EzfYQ9dAzQZbz5FpvR439kNWLZiUeX847--McvOxkkzqWprPfQH9xYAxeGtetGKZco5MSYgMXaXZ10XdcZIl3WHToq2GeRJMTMt0anJyNd7_DT9NcTTMgL5sHhX99wiKeuj_-H7QzX4D1-ZKxdZxOzN-evypiWzTDqI_lqWM4PEwwc1mWSC-g=w640-h360');
+    object-fit: contain;
+}
+
+.actor-8 {
+    background-image: url('https://i.redd.it/rkabvbpszjv81.jpg');
+    object-fit: contain;
+}
+
+.actor-9 {
+    background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2022/03/pete-savage-1200x600.jpg');
+    object-fit: contain;
+}
+
+.actor-10 {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEhBpZoB_HTBObF4OQKCOa6xxeT293UQP0kSY4efKNgpuxLj5FfgFlIwpanTVWd8r3ZylU7J8wO6dbcucYwuAxEVl6WNb-5lbCyAtnaQbO65hc5wsHbh6-kzIGpwbkv32W0-QQsfSO5lhJDJn3nXtsf46id6NLgNgMQUnLbzecLPyvW0zircDH99VPfpjQ=w640-h360');
+    object-fit: contain;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+.fot-nav {
+    display: none;
+}
+
+.fot-lis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .fot-nav {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #capa {
+        background-position: 40%;
+    }
+
+    #titulo {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .per {
+        width: 100%;
+        margin: auto;
+    }
+
+    .fotos-content {
+        grid-template-columns: auto;
+        margin-top: 100px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .fot-nav {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+}

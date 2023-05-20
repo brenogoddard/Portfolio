@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* estilizamos header(cabeçalho) com a mesma cor da página, padding para espaçamento interior, display flex para ficar em linha
+align para todos elementos ficarem ao centro e justify separar ao máximo. */
+
+header {
+    background-color: #222; 
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* estilizando o título com tamanho da fonte, font weight (peso da fonte) e pointer para quando passar o mouse virar mãozinha */
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+/* estilizando a navegação(nav) onde ficam as figuras dos aplicativos alinhando com o display flex e colocando ao centro com align */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* estilizando diretamente as figuras cridas pela âncora(a) com a margem a direta para "descolarem" e o tamanho da fonte */
+
+a {
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+
+/* estlizando o cabeçalho do titulo(h1) e das figuras(a) com a cor e o transition para quando passarmos o mouse ficar branco e permanecer 
+por alguns segundos que é um efeito de início e fim lentos. */
+
+header h1, a {
+    color: #00e0ff;
+    transition: 0.2s ease-in-out;
+}
+
+/* estilizando para quando passarmos o mouse por cima do título(h1) e figuras(a) mudar a cor para branco. */
+
+header h1:hover, a:hover{
+    color: #fff;
+}
+
+@media (max-width: 450px) {
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    .text {
+        font-size: 0.7rem;
+        text-align: left;
+        margin-right: 10%;
+        margin-left: 20%;
+    }
+}

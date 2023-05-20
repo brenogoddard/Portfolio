@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* estilizando o footer(rodapé) com a cor de fundo, padding para espaçamento interior, display flex para alinhar o texto
+aling para centralizar na vertical e justify center centralizar na horizontal. */
+
+footer {
+    background-color: #222;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilizando o span que é onde criamos o texto com o tamanho e peso da fonte */
+
+span {
+    font-size: 0.8em;
+    font-weight: 200;
+}

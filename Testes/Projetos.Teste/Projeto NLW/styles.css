@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*respeitar o tamanho da borda que definirmos*/
+    font-family: "Roboto",sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-color: #121215;
+    color: #EAEAEa;
+    display: grid;
+    grid-template-areas: "profile timeline";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+::-webkit-scrollbar { /*customizando a barra lateral de rolagem do site, dando uma largura de 8px*/
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2c31;  /* cor de fundo do "caminho" da barra de rolagem*/
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9e9ea0; /*cor da barra de rolagem*/
+}
+
+@keyframes enter { /*inserir animação no site*/ 
+    from { 
+        opacity: 0;
+        transform: translateY(-200px); /* manipular a posição do keyframe na vertical, quando colocamos negativo vai "pra fora" da tela.*/
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    padding: 64px;
+    grid-area: timeline;
+    overflow-y: scroll; /*quando o conteúdo não couber na vertical habilitamos e somente o lado direito vai "rolar" para baixo*/
+    animation: enter 0.7s ease-in-out;
+}
+
+.memory {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-decoration: none;
+    margin-bottom: 64px;
+}
+
+.memory small {
+    color: #bebebf;
+    font-size: 0.75rem; /*como definimos no root q a fonte "padrão" é 16px, colocamos a propriedade rem e fazemos o calculo 12/16 = 0.75rem*/
+}
+
+.memory h1 {
+    font-size: 2rem;
+    color: #EAEAEa;
+}
+
+.memory img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.memory div {
+    width: 100%;
+    height: 280px;
+    overflow: hidden; /* quando o conteúdo não couber nas dimensões passadas ele vai esconder e não mostrar*/
+    border-radius: 8px;
+}
+
+.memory:hover img {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.memory p {
+    font-size: 1.2rem;
+    color: #bebebf;
+    line-height: 28px; /*espaçamento das linhas do texto*/
+}
+
+aside {
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid;
+    border-image: linear-gradient(#727275, #2c2c31) 1;
+    gap: 20px;
+    background-image: url(./img/background.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+aside * { /* selecionamos somente os elementos criados dentro do aside (nav, a, small, h1) assim deixando a borda e a imagem fixos*/
+    animation: enter 0.7s ease-in-out;
+}
+
+aside img:nth-child(2) {
+    width: 20%;
+    object-fit: cover;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box, linear-gradient(#d39e33, #ed5636, #633bbc) border-box;
+}
+
+aside p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+aside span {
+    font-size: 0.75rem;
+    color: #9e9ea0;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.8fr;
+        grid-template-areas: "profile" "timeline";
+    }
+
+    aside {
+        border-right: none;
+        padding: 32px 12px;
+    }
+
+    nav {
+        overflow-y: visible; /*rolagem da tela pegar todos os elementos e ir até o final*/
+        padding: 22px;
+    }
+
+    aside img:nth-child(2) {
+        width: 30%;
+        object-fit: cover;
+        height: 200px;
+    }
+
+}
